@@ -1,0 +1,34 @@
+package exercicio3_43_3;
+
+import java.util.Arrays;
+
+public class Aluno {
+
+	public String nome;
+	public double nota [] = new double[3];
+
+	public double mediaFinal() {
+		return (nota[0] + nota[1] + nota[2]);
+	}
+
+	public double result_vlr() {
+		if (this.mediaFinal() >= 60.0)
+			return 0;
+		else
+			return 60.0 - this.mediaFinal();
+	}
+
+	public String result_str() {
+		if (this.mediaFinal() >= 60.0)
+			return "Passou";
+		else
+			return "Não passou";
+	}
+
+	@Override
+	public String toString() {
+		return "Aluno [nome=" + nome + ", nota=" + Arrays.toString(nota) + "]";
+	}
+	
+}
+

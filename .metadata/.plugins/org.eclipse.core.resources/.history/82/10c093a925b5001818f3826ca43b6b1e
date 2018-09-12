@@ -1,0 +1,28 @@
+package aplicacao;
+
+import java.util.Scanner;
+
+public class Exerc3_40 {
+
+	public static void main(String[] args) {
+
+		System.out.println("Enter product data: ");
+		Scanner sc = new Scanner(System.in);
+		
+		Produto nome = new Produto();
+		
+		String int n1 = sc.nextInt();
+		int n2 = sc.nextInt();
+		int n3 = sc.nextInt();
+
+		if (n1 >= n2 && n1 >= n3) {
+			System.out.println("Higher = " + n1);
+		} else if (n2 >= n1 && n2 >= n3) {
+			System.out.println("Higher = " + n2);
+		} else
+			System.out.println("Higher = " + n3);
+
+		sc.close();
+	}
+
+}

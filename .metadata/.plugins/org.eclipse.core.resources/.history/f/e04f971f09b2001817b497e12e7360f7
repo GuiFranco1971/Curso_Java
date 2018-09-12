@@ -1,0 +1,15 @@
+package teste;
+
+public class Teste {
+
+	public static void main(String[] args) {
+		
+		String nome = "Guilherme";
+		System.out.println(nome);
+		
+		nome = "Ana";
+		System.out.println(nome);
+		
+	}
+
+}

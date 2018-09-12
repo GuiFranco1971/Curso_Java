@@ -1,0 +1,22 @@
+package aplicacao;
+
+import java.util.Scanner;
+
+public class Principal {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.print("Digite o número de linhas e colunas: ");
+		int lin = sc.nextInt();
+		int col = sc.nextInt();
+		
+		int[][] matriz = new int[lin][col];
+		
+		System.out.println(lin + col);
+
+		sc.close();
+	}
+
+}

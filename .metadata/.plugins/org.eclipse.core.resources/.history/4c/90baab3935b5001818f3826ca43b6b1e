@@ -1,0 +1,28 @@
+package exercicio3_43_3;
+
+import java.util.Scanner;
+
+public class Principal {
+
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+		Aluno estud = new Aluno();
+		System.out.println(estud);
+		System.out.println("Entre os dados do Aluno: ");
+		System.out.print("Nome: ");
+		estud.nome = sc.nextLine();
+	//	for (int i=0; i < 3; i++) {
+	//		System.out.print("Nota " + i+1 + ": ");
+//		estud.nota[i] = sc.nextDouble();
+//		}
+
+		System.out.print("Nota 1: ");
+		estud.nota[0] = sc.nextDouble();
+	
+
+		sc.close();
+
+	}
+
+}

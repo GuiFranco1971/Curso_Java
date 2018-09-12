@@ -1,0 +1,28 @@
+package aplicacao;
+
+import java.util.Scanner;
+
+public class Principal {
+
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+
+		System.out.print("Quantos empregados serão registrados? ");
+		int n = sc.nextInt();
+
+		for (int i = 1; i <= n; i++) {
+			System.out.println();
+			System.out.println("Funcionário #" + i + ":");
+			System.out.print("ID: ");
+			int id = sc.nextInt();
+			sc.nextLine();
+			System.out.print("Nome: ");
+			String nome = sc.nextLine();
+			System.out.print("Salárioe: ");
+			double salaro = sc.nextDouble();
+
+		}
+	}
+
+}

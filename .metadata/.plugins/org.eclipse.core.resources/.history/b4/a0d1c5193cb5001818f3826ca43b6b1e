@@ -1,0 +1,21 @@
+package aplicacao;
+
+import java.util.Scanner;
+
+public class Principal {
+
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Qual a cotação da moeda? ");
+		double cot = sc.nextDouble();
+		System.out.println("Qual o valor de moeda a ser comprado? ");
+		double vlr = sc.nextDouble();
+		System.out.println("Valor Total a pagar em Reais: " + String.format("%.2f", CurrencyConverter.calculadora(vlr, cot)));
+		
+		sc.close();
+
+	}
+
+}

@@ -1,0 +1,44 @@
+package aplicacao;
+
+import java.util.Scanner;
+import produto.Produto;
+
+public class Exerc3_40 {
+
+	public static void main(String[] args) {
+
+		int qt;
+		
+		System.out.println("Enter product data: ");
+		Scanner sc = new Scanner(System.in);
+
+		Produto prod = new Produto();
+
+		prod.name = sc.nextLine();
+		prod.price = sc.nextDouble();
+		prod.quantity = sc.nextInt();
+
+		System.out.println();
+		System.out.printf("Product data: %s, $ %.2f, %d units, Total: $ %.2f", prod.name, prod.price, prod.quantity,
+				prod.totalValueInStock());
+
+		System.out.println();
+		System.out.print("Enter the number of products to be added in stock: ");
+		qt = sc.nextInt();
+		prod.addProducts(qt);
+		System.out.println();
+		System.out.printf("Updated data: %s, $ %.2f, %d units, Total: $ %.2f", prod.name, prod.price, prod.quantity,
+				prod.totalValueInStock());
+
+		System.out.println();
+		System.out.print("Enter the number of products to be removed from stock: ");
+		qt = sc.nextInt();
+		prod.removeProducts(qt);
+		System.out.println();
+		System.out.printf("Updated data: %s, $ %.2f, %d units, Total: $ %.2f", prod.name, prod.price, prod.quantity,
+				prod.totalValueInStock());
+
+		sc.close();
+	}
+
+}

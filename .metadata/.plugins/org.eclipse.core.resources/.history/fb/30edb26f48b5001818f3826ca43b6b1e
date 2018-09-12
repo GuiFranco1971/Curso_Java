@@ -1,0 +1,51 @@
+package aplicacao;
+
+public class ContaCorrente {
+
+	private int nroConta;
+	private String nomeCliente;
+	private double saldoConta;
+	
+	public ContaCorrente(int nroConta, String nomeCliente, double saldoConta) {
+		this.nroConta = nroConta;
+		this.nomeCliente = nomeCliente;
+		this.saldoConta = saldoConta;
+	}
+	
+	public ContaCorrente(int nroConta, String nomeCliente) {
+		this.nroConta = nroConta;
+		this.nomeCliente = nomeCliente;
+		this.saldoConta = 0;
+	}
+
+	public ContaCorrente() {
+		// TODO Auto-generated constructor stub
+	}
+
+	public int getNroConta() {
+		return nroConta;
+	}
+
+	public String getNomeCliente() {
+		return nomeCliente;
+	}
+
+	public void setNomeCliente(String nomeCliente) {
+		this.nomeCliente = nomeCliente;
+	}
+
+	public double getSaldoConta() {
+		return saldoConta;
+	}
+
+	@Override
+	public String toString() {
+		return "Conta Corrente " + nroConta + ", Cliente: " + nomeCliente + ", Saldo: R$ " + String.format("%.2f", saldoConta);
+	}
+
+	
+	
+	
+	
+	
+}

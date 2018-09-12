@@ -1,0 +1,29 @@
+package exercicio3_43_3;
+
+public class Aluno {
+
+	public String nome;
+	public double[] nota;
+
+	public double mediaFinal() {
+		return (nota[0] + nota[1] + nota[2]) / 3;
+	}
+
+	public double result_vlr() {
+		if (this.mediaFinal() >= 60.0)
+			return 0;
+		else
+			return 60.0 - this.mediaFinal();
+	}
+
+	public String result_str() {
+		if (this.mediaFinal() >= 60.0)
+			return "Passou";
+		else
+			return "Não passou";
+	}
+
+
+	
+}
+
